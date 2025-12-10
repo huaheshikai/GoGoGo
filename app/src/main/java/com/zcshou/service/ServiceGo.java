@@ -29,7 +29,7 @@ import androidx.core.app.NotificationCompat;
 
 import com.elvishew.xlog.XLog;
 import com.zcshou.gogogo.MainActivity;
-import com.zcshou.gogogo.R;
+import com.mengyu.location.R;
 import com.zcshou.joystick.JoyStick;
 
 public class ServiceGo extends Service {
