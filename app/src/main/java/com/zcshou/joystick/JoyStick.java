@@ -37,7 +37,7 @@ import com.baidu.mapapi.search.sug.SuggestionSearchOption;
 import com.zcshou.database.DataBaseHistoryLocation;
 import com.zcshou.gogogo.HistoryActivity;
 import com.zcshou.gogogo.MainActivity;
-import com.zcshou.gogogo.R;
+import com.mengyu.location.R;
 import com.zcshou.utils.GoUtils;
 import com.zcshou.utils.MapUtils;
 

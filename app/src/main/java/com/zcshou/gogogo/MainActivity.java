@@ -40,6 +40,8 @@ import android.widget.RadioGroup;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import com.mengyu.location.BuildConfig;
+import com.mengyu.location.R;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
@@ -209,9 +211,9 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
 
         initSearchView();
 
-        initUpdateVersion();
+        // initUpdateVersion();
 
-        checkUpdateVersion(false);
+        // checkUpdateVersion(false);
     }
 
     @Override
@@ -431,14 +433,14 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
                     }
                 }
             } else if (id == R.id.nav_update) {
-                checkUpdateVersion(true);
+                // checkUpdateVersion(true);
             } else if (id == R.id.nav_feedback) {
                 File file = new File(getExternalFilesDir("Logs"), GoApplication.LOG_FILE_NAME);
                 ShareUtils.shareFile(this, file, item.getTitle().toString());
             } else if (id == R.id.nav_contact) {
-                Uri uri = Uri.parse("https://gitee.com/itexp/gogogo/issues");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                // Uri uri = Uri.parse("https://gitee.com/itexp/gogogo/issues");
+                // Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                // startActivity(intent);
             }
 
             DrawerLayout drawer = findViewById(R.id.drawer_layout);
