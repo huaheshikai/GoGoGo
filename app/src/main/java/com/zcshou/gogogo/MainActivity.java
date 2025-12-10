@@ -432,15 +432,9 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
                         GoUtils.DisplayToast(this, getResources().getString(R.string.app_error_dev));
                     }
                 }
-            } else if (id == R.id.nav_update) {
-                // checkUpdateVersion(true);
             } else if (id == R.id.nav_feedback) {
                 File file = new File(getExternalFilesDir("Logs"), GoApplication.LOG_FILE_NAME);
                 ShareUtils.shareFile(this, file, item.getTitle().toString());
-            } else if (id == R.id.nav_contact) {
-                // Uri uri = Uri.parse("https://gitee.com/itexp/gogogo/issues");
-                // Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                // startActivity(intent);
             }
 
             DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -651,8 +645,6 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
         locationOption.setIsNeedLocationDescribe(false);
         //可选，默认false，设置是否需要POI结果，可以在BDLocation.getPoiList里得到
         locationOption.setIsNeedLocationPoiList(false);
-        //可选，默认false，设置是否收集CRASH信息，默认收集
-        locationOption.setIgnoreCacheException(true);
         //可选，默认false，设置是否开启Gps定位
         //locationOption.setOpenGps(true);
         locationOption.setOpenGnss(true);
