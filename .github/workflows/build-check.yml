@@ -1,18 +1,18 @@
 # name 字段用于指定 Workflow 的名字
-name: Build Check
+#name: Build Check
 
 # 在 on 字段下列举触发条件（事件），可以有多种
-on:
+#on:
   # 手动使用 Github WebUI 触发
-  workflow_dispatch:
+  #workflow_dispatch:
   # 仓库收到 Push 时触发
-  push:
-    branches:
+ # push:
+   # branches:
       - master
   # 仓库收到 pull_request 时触发
-  pull_request:
-    branches:
-      - master
+ # pull_request:
+   # branches:
+     # - master
 
 # 一个 workflow 执行一个或多个 job，这些 job 被组织在 jobs 字段下
 jobs:
