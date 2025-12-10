@@ -33,6 +33,7 @@ import java.util.Locale;
 import java.util.List;
 import java.util.Map;
 
+import com.mengyu.location.R;
 import com.zcshou.database.DataBaseHistoryLocation;
 import com.zcshou.utils.GoUtils;
 

@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.zcshou.gogogo.R;
+import com.mengyu.location.R;
 
 public class ButtonView extends LinearLayout {
     private ButtonViewClickListener mListener;

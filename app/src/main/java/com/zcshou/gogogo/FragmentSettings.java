@@ -11,6 +11,7 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import com.baidu.mapapi.SDKInitializer;
 import com.elvishew.xlog.XLog;
+import com.mengyu.location.R;
 import com.zcshou.utils.GoUtils;
 
 import java.util.Objects;
