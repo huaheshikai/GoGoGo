@@ -838,9 +838,6 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
                 mBaiduMap.clear();
                 mMarkLatLngMap = null;
 
-                if (GoUtils.isWifiEnabled(MainActivity.this)) {
-                    GoUtils.showDisableWifiDialog(MainActivity.this);
-                }
             }
         } else {
             if (!GoUtils.isAllowMockLocation(this)) {
@@ -859,10 +856,6 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
                     recordCurrentLocation(mMarkLatLngMap.longitude, mMarkLatLngMap.latitude);
                     mBaiduMap.clear();
                     mMarkLatLngMap = null;
-
-                    if (GoUtils.isWifiEnabled(MainActivity.this)) {
-                        GoUtils.showDisableWifiDialog(MainActivity.this);
-                    }
                 }
             }
         }
