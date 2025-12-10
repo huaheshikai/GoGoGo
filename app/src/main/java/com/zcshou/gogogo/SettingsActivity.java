@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBar;
+import com.mengyu.location.R;
 
 public class SettingsActivity extends BaseActivity {
 
