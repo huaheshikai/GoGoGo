@@ -15,6 +15,9 @@ import com.elvishew.xlog.printer.file.FilePrinter;
 import com.elvishew.xlog.printer.file.backup.NeverBackupStrategy;
 import com.elvishew.xlog.printer.file.clean.FileLastModifiedCleanStrategy;
 import com.elvishew.xlog.printer.file.naming.ChangelessFileNameGenerator;
+import com.mengyu.location.BuildConfig;
+import com.mengyu.location.R;
+import androidx.preference.PreferenceManager;
 
 import java.io.File;
 
@@ -28,6 +31,8 @@ public class GoApplication extends Application {
         super.onCreate();
 
         initXlog();
+
+        PreferenceManager.setDefaultValues(this, R.xml.preferences_main, false);
 
         // 百度地图 7.5 开始，要求必须同意隐私政策，默认为false
         SDKInitializer.setAgreePrivacy(this, true);
