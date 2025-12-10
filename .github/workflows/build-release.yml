@@ -103,6 +103,10 @@ jobs:
           mention-authors         : true
           mention-new-contributors: true
           include-compare-link    : true
+          include-pr-links        : true
+          include-commit-links    : true
+          use-github-autolink     : true
+          semver                  : false
 
       - name: Upload Changelog
         uses: actions/upload-artifact@v4
