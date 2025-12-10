@@ -40,6 +40,8 @@ import android.widget.RadioGroup;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import com.mengyu.location.BuildConfig;
+import com.mengyu.location.R;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
