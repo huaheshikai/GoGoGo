@@ -83,21 +83,15 @@
         </provider>
 
         <activity
-            android:name="com.zcshou.gogogo.WelcomeActivity"
+            android:name="com.zcshou.gogogo.MainActivity"
+            android:launchMode="singleInstance"
             android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name="com.zcshou.gogogo.MainActivity"
-            android:launchMode="singleInstance"
-            android:exported="false"
-            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name="com.zcshou.gogogo.SettingsActivity"
