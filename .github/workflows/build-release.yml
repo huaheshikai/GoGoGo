@@ -31,10 +31,13 @@ jobs:
 
       # 创建 local.properties 文件
       - name: Create local.properties
+        env:
+          MAPS_API_KEY: ${{ secrets.MAPS_API_KEY }}
+          MAPS_SAFE_CODE: ${{ secrets.MAPS_SAFE_CODE }}
         run: |
           cat << EOF > local.properties
-          MAPS_API_KEY=${{ secrets.MAPS_API_KEY }}
-          MAPS_SAFE_CODE=${{ secrets.MAPS_SAFE_CODE }}
+          MAPS_API_KEY=${MAPS_API_KEY}
+          MAPS_SAFE_CODE=${MAPS_SAFE_CODE}
           EOF
 
       - name: Build APK
